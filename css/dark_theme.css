@@ -1,0 +1,41 @@
+html {
+  background-image: url('../resources/background.png');
+  background-color: #202030;
+
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 30px;
+}
+
+footer {
+  position: absolute;
+  left: 1%;
+  bottom: 0;
+  height: 50px;
+  width: 99%;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  color: #AAAADDAA;
+  font-size: 24px
+}
+
+a {
+  color: #AAAADDAA;
+}
+
+hr {
+  border: 1px dashed #AAAADDAA;
+  border-style: none none dashed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
