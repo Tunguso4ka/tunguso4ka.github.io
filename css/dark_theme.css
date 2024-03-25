@@ -29,6 +29,10 @@ a {
   color: #AAAADDAA;
 }
 
+p {
+  color: #AAAADD66;
+}
+
 hr {
   border: 1px dashed #AAAADDAA;
   border-style: none none dashed;
