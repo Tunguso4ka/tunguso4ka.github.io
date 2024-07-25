@@ -4,15 +4,13 @@
 }
 
 html {
-  background-image: url('../resources/background.png');
-  background-color: #202030;
+  background-color: #282828;
 
   position: relative;
   min-height: 100%;
 }
 
 body {
-  padding: 30px;
   font-family: "IBM 3270", Fallback, sans-serif;
 }
 
@@ -27,25 +25,26 @@ footer {
 
 li {
   display: inline-block;
-  color: #AAAADDAA;
-  font-size: 24px
+  color: #D5C4A1;
+  font-size: 24px;
 }
 
 a {
-  color: #AAAADDAA
+  color: #D5C4A1;
 }
 
 p {
-  color: #AAAADD66;
+  color: #A89984;
 }
 
 hr {
-  border: 1px dashed #AAAADDAA;
+  border: 1px dashed #D5C4A1;
   border-style: none none dashed;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
