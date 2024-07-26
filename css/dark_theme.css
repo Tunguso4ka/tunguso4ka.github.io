@@ -5,21 +5,25 @@
 
 html {
   background-color: #282828;
-
+  /*
   position: relative;
   min-height: 100%;
+  */
 }
 
 body {
   font-family: "IBM 3270", Fallback, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
+  display: flex;
   position: absolute;
   left: 1%;
-  bottom: 0;
-  height: 50px;
-  width: 99%;
+  bottom: 1%;
+  height: 5%;
   overflow: hidden;
 }
 
@@ -38,13 +42,16 @@ p {
 }
 
 hr {
-  border: 1px dashed #D5C4A1;
+  border: 0.1em dashed #D5C4A1;
   border-style: none none dashed;
 }
 
 main {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+}
+
+#divider {
+  margin: 1em;
 }
