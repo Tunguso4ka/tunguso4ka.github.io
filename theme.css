@@ -30,10 +30,9 @@ footer {
 }
 
 li {
-  display: inline-block;
   list-style: none;
   color: #D5C4A1;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 a {
