@@ -1,10 +1,15 @@
+:root {
+  --dark: #282828;
+  --light: #CAE9FF;
+}
+
 @font-face {
   font-family: "IBM 3270";
   src: url('../resources/3270-Regular.ttf') format("truetype");
 }
 
 html {
-  background-color: #282828;
+  background-color: var(--dark);
   /*
   position: relative;
   min-height: 100%;
@@ -31,32 +36,32 @@ footer {
 
 li {
   list-style: none;
-  color: #D5C4A1;
+  color: var(--light);
   font-size: 1.5em;
 }
 
 ul {
-  padding: 0em 2em;
+  padding: 0em;
 }
 
 ul li:before {
-  content: '<';
+  content: '~ ';
 }
 
 ul li:after {
-  content: '>';
+  content: ' ~';
 }
 
 a {
-  color: #D5C4A1;
+  color: var(--light);
 }
 
 p {
-  color: #A89984;
+  color: var(--light);
 }
 
 hr {
-  border: 0.1em dashed #D5C4A1;
+  border: 0.1em dashed var(--light);
   border-style: none none dashed;
 }
 
