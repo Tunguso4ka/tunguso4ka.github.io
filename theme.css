@@ -1,6 +1,8 @@
 :root {
-  --dark: #282828;
-  --light: #CAE9FF;
+  color-scheme: dark light;
+  
+  --background: light-dark(#CAE9FF, #282828);
+  --foreground: light-dark(#282828, #CAE9FF);
 }
 
 @font-face {
@@ -9,7 +11,7 @@
 }
 
 html {
-  background-color: var(--dark);
+  background-color: var(--background);
   /*
   position: relative;
   min-height: 100%;
@@ -36,7 +38,7 @@ footer {
 
 li {
   list-style: none;
-  color: var(--light);
+  color: var(--foreground);
   font-size: 1.5em;
 }
 
@@ -53,15 +55,15 @@ ul li:after {
 }
 
 a {
-  color: var(--light);
+  color: var(--foreground);
 }
 
 p {
-  color: var(--light);
+  color: var(--foreground);
 }
 
 hr {
-  border: 0.1em dashed var(--light);
+  border: 0.1em dashed var(--foreground);
   border-style: none none dashed;
 }
 
