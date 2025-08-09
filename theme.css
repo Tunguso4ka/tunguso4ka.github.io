@@ -5,6 +5,10 @@
   --foreground: light-dark(#282828, #CAE9FF);
 }
 
+* {
+  color: var(--foreground);
+}
+
 @font-face {
   font-family: "IBM 3270";
   src: url('../resources/3270-Regular.ttf') format("truetype");
@@ -27,18 +31,8 @@ body {
   justify-content: center;
 }
 
-footer {
-  display: flex;
-  position: absolute;
-  left: 1%;
-  bottom: 1%;
-  height: 5%;
-  overflow: hidden;
-}
-
 li {
   list-style: none;
-  color: var(--foreground);
   font-size: 1.5em;
 }
 
@@ -47,19 +41,11 @@ ul {
 }
 
 ul li:before {
-  content: '~ ';
+  content: '<';
 }
 
 ul li:after {
-  content: ' ~';
-}
-
-a {
-  color: var(--foreground);
-}
-
-p {
-  color: var(--foreground);
+  content: '>';
 }
 
 hr {
@@ -73,6 +59,7 @@ main {
   transform: translateY(-50%);
 }
 
-#divider {
-  margin: 1em;
+.images {
+  display: flex;
+  justify-content: center;
 }
