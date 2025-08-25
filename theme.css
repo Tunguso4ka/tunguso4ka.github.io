@@ -1,12 +1,12 @@
 :root {
   color-scheme: dark light;
-  
+
   --background: light-dark(#CAE9FF, #282828);
   --foreground: light-dark(#282828, #CAE9FF);
 }
 
 * {
-  color: var(--foreground);
+  color: inherit;
 }
 
 @font-face {
@@ -15,20 +15,19 @@
 }
 
 html {
+  font-family: "IBM 3270", Fallback, sans-serif;
   background-color: var(--background);
-  /*
-  position: relative;
-  min-height: 100%;
-  */
-  margin: 0;
-  padding: 0;
+  color: var(--foreground);
 }
 
-body {
-  font-family: "IBM 3270", Fallback, sans-serif;
-  width: 100%;
+main {
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+p {
+  text-align: center;
 }
 
 li {
@@ -37,7 +36,7 @@ li {
 }
 
 ul {
-  padding: 0em;
+  padding: 0;
 }
 
 ul li:before {
@@ -48,15 +47,14 @@ ul li:after {
   content: '>';
 }
 
+ul li a:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
 hr {
   border: 0.1em dashed var(--foreground);
   border-style: none none dashed;
-}
-
-main {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .images {
